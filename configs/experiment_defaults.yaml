@@ -1,0 +1,39 @@
+# Experiment Defaults Configuration for NACC
+
+ensemble:
+  n_base_models: 20
+  subspace_ratio: 0.2
+  projection_kind: "gaussian" # "gaussian", "sparse", or "divi_gated"
+  base_clusterers: ["kmeans", "gmm", "ward"]
+  perturbation_noise_std: 0.05
+  subsample_ratio: 0.85
+
+optimization:
+  method: "ga" # "ga", "pso", or "hybrid"
+  population_size: 20
+  max_iterations: 15
+  lambda_stability: 1.0
+  lambda_separation: 0.8
+  lambda_noise_sensitivity: 0.6
+  lambda_complexity: 0.2
+  tournament_size: 3
+  mutation_rate: 0.15
+  crossover_rate: 0.8
+
+stability:
+  tau_core: 0.70
+  tau_uncertain: 0.40
+
+consensus:
+  dissimilarity_penalty: 0.15
+  spectral_assign: true
+
+reliability_profiler:
+  n_perturbations: 10
+  noise_levels: [0.05, 0.10, 0.25, 0.50]
+  dropout_rates: [0.10, 0.25, 0.50]
+  subsample_fractions: [0.70, 0.80, 0.90]
+  batch_shift_scales: [0.10, 0.25, 0.50]
+
+reproducibility:
+  seeds: [42, 101, 2024, 777, 999]

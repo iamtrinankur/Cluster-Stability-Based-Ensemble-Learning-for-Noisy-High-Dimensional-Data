@@ -1,0 +1,7 @@
+stage,name,description,ari,nmi,ami,fmi,purity,silhouette,davies_bouldin,calinski_harabasz,dunn_index
+1,Conventional Clustering,Standard Euclidean K-Means (Lloyd 1982),-0.0123,0.0269,0.0161,0.5305,0.6528,0.0739,2.739,8.06,0.4247
+2,Noise-Aware Base Clustering,"Diverse views (DIVI gating, random projections, perturbations)",-0.0123,0.0269,0.0161,0.5305,0.6528,0.0739,2.739,8.06,0.4247
+3,+ GA/PSO Feature Opt,Multi-view clustering with GA-optimized feature weights F(W),-0.0584,0.1134,0.1001,0.6269,0.6528,0.1011,2.2123,5.54,0.4809
+4,+ Sample Stability,Sample stability diagnostics and Core/Halo/Uncertain partitioning,-0.0584,0.1134,0.1001,0.6269,0.6528,0.1011,2.2123,5.54,0.4809
+5,+ Error-Aware Consensus,Reliability-weighted connectivity fusion H = sum wm(Rm*Am)/sum wm,-0.0584,0.1134,0.1001,0.6269,0.6528,0.1011,2.2123,5.54,0.4809
+6,Full NACC (Proposed),Complete framework with dissimilarity regularization & reliability profiler,-0.0584,0.1134,0.1001,0.6269,0.6528,0.1011,2.2123,5.54,0.4809

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+authors:
+  - family-names: "Kundu"
+    given-names: "Akash"
+title: "Cluster Stability-Based Ensemble Learning for Noisy High-Dimensional Data: Noise-Aware Consensus Clustering (NACC)"
+version: 1.0.0
+date-released: 2026-10-12
+url: "https://github.com/iamtrinankur/Cluster-Stability-Based-Ensemble-Learning-for-Noisy-High-Dimensional-Data"
+keywords:
+  - "clustering"
+  - "consensus clustering"
+  - "cluster stability"
+  - "high-dimensional data"
+  - "bioinformatics"
+  - "noise-aware ensemble"
+license: MIT

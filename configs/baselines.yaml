@@ -1,0 +1,45 @@
+# Baseline Clustering Algorithms Registry
+# Compares Conventional, Consensus, and Noise-Aware Algorithms
+
+baselines:
+  kmeans:
+    name: "K-Means (Lloyd 1982)"
+    type: "classical_single"
+    complexity: "O(NDK)"
+    description: "Standard Euclidean distance minimization with k-means++ initialization"
+
+  ward:
+    name: "Ward Hierarchical Linkage (Ward 1963)"
+    type: "classical_single"
+    complexity: "O(N^2 D)"
+    description: "Agglomerative hierarchical clustering minimizing within-cluster variance"
+
+  spectral:
+    name: "Spectral Clustering (von Luxburg 2007)"
+    type: "classical_single"
+    complexity: "O(N^3)"
+    description: "RBF normalized graph Laplacian eigen-decomposition"
+
+  fuzzy_cmeans:
+    name: "Fuzzy C-Means (Bezdek 1981)"
+    type: "fuzzy_single"
+    complexity: "O(NDK)"
+    description: "Soft fuzzy partition membership objective optimization"
+
+  standard_consensus:
+    name: "Standard Consensus Clustering (Fred & Jain 2005)"
+    type: "ensemble_consensus"
+    complexity: "O(N^2 M)"
+    description: "Uniform average co-association matrix over base k-means partitions"
+
+  core_halo:
+    name: "Core-Halo Consensus (Li et al. 2019)"
+    type: "ensemble_consensus"
+    complexity: "O(N^2 M)"
+    description: "Determinacy thresholding with core identification and boundary assignment"
+
+  nacc:
+    name: "Noise-Aware Consensus Clustering (NACC - Proposed)"
+    type: "noise_aware_ensemble"
+    complexity: "O(N M D_active + N^2)"
+    description: "Full NACC framework with multi-view gating, GA/PSO feature optimization, Core/Halo modeling, and error-weighted consensus"

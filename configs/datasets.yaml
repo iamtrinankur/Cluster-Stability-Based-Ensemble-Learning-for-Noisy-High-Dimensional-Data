@@ -1,0 +1,84 @@
+# Benchmark Datasets Registry for NACC Framework
+# High-Dimensional Biomedical & Microarray Benchmarks
+
+datasets:
+  07_golub_all_aml:
+    name: "Golub Leukemia (ALL vs AML)"
+    domain: "Cancer Microarray"
+    file: "07_golub_all_aml.csv"
+    samples: 72
+    features: 5000
+    clusters: 2
+    description: "Acute Lymphoblastic Leukemia (ALL) vs Acute Myeloid Leukemia (AML) gene expression"
+
+  06_cll_sub_111:
+    name: "CLL Leukemia Subtypes"
+    domain: "Cancer Genomics"
+    file: "06_cll_sub_111.csv"
+    samples: 111
+    features: 5000
+    clusters: 3
+    description: "Chronic Lymphocytic Leukemia clinical and molecular subtypes"
+
+  05_carcinom:
+    name: "Carcinoma Multi-Class"
+    domain: "Cancer Transcriptomics"
+    file: "05_carcinom.csv"
+    samples: 174
+    features: 5000
+    clusters: 11
+    description: "Multi-tissue carcinoma expression profiling across 11 diagnostic classes"
+
+  04_lung:
+    name: "Lung Carcinoma"
+    domain: "Thoracic Oncology"
+    file: "04_lung.csv"
+    samples: 203
+    features: 3312
+    clusters: 5
+    description: "Lung cancer histopathology subtypes expression matrix"
+
+  03_gcm:
+    name: "Global Cancer Map (GCM)"
+    domain: "Multi-Tissue Oncology"
+    file: "03_gcm.csv"
+    samples: 190
+    features: 5000
+    clusters: 14
+    description: "Multiclass cancer diagnosis and molecular classification across 14 malignancy types"
+
+  11_geo_gse2034_breast:
+    name: "GSE2034 Breast Cancer"
+    domain: "Breast Oncology"
+    file: "11_geo_gse2034_breast.csv"
+    samples: 286
+    features: 5000
+    clusters: 2
+    description: "Relapse vs relapse-free survival gene expression profiling in breast cancer"
+
+  01_uci_pancan_rnaseq:
+    name: "UCI Pan-Cancer RNA-Seq"
+    domain: "Pan-Cancer RNA-Seq"
+    file: "01_uci_pancan_rnaseq.csv"
+    samples: 801
+    features: 5000
+    clusters: 5
+    description: "TCGA RNA-Seq Pan-Cancer dataset with BRCA, KIRC, LUAD, PRAD, COAD"
+
+  02_uci_arcene:
+    name: "UCI Arcene Mass Spectrometry"
+    domain: "Proteomics / Mass Spectrometry"
+    file: "02_uci_arcene.csv"
+    samples: 900
+    features: 10000
+    clusters: 2
+    description: "Mass-spectrometry ovarian and prostate cancer SELDI proteomic spectra"
+
+  synthetic_high_d:
+    name: "Synthetic High-Dimensional Noisy Benchmark"
+    domain: "Controlled Benchmark"
+    file: null
+    samples: 300
+    features: 2000
+    clusters: 3
+    description: "Synthetic benchmark with controlled signal subspaces, distractor noise dimensions, and outliers"
